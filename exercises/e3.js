@@ -10,9 +10,14 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
+  let average = 0;
+  for (let i = 0; i < array.length; i++){
+    average += array[i];
+  }
+  return average/array.length;
 }
-
+// const aveOne = getAverage([22, 45, 4, 65]);
+// console.log(aveOne);
 
 /** 
  * PART 2
@@ -23,8 +28,18 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
+  let sum = 0;
 
+  for(let i = 0; i < str.length; i++){
+    let value = parseInt(str[i]);
+    if (Number.isInteger(value)){
+      sum += value;
+    }
+  }
+  return sum;
 }
+
+// console.log(getStringSum());
 
 
 // === TEST YOURSELF ===
