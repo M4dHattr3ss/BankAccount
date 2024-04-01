@@ -6,8 +6,19 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
+  let arrayThree = [];
 
+    if(arr1.length > 0){
+    for (let i =0; i < arr1.length; i++){
+      arrayThree.push(arr1[i]);
+    }}
+    if(arr2.length >0){
+    for(let j = 0; j < arr2.length; j++){
+      arrayThree.push(arr2[j]);
+    }}
+    return arrayThree;
 }
+
 
 
 
